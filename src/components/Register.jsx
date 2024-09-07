@@ -20,8 +20,8 @@ const Register = () => {
       <div className="bg-white h-[290px] p-8 rounded-lg shadow-lg max-w-md w-full">
         <h2 className="text-3xl font-extrabold text-gray-800 mb-6 text-center">Register Student</h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
-          <input className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"  onChange={(e) => setName(e.target.value)}  value={name}  type="text"  placeholder="Enter Name"  />
-          <input className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"  onChange={(e) => setAge(e.target.value)}  value={age}  type="text"  placeholder="Enter Age"  />
+          <input required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"  onChange={(e) => setName(e.target.value)}  value={name}  type="text"  placeholder="Enter Name"  />
+          <input required className="apperance w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"  onChange={(e) => setAge(e.target.value)}  value={age}  type="number"  placeholder="Enter Age"  />
           <button 
             className="w-full bg-indigo-500 text-white py-3 rounded-lg font-semibold hover:bg-indigo-600 transition duration-300" 
             type="submit">
